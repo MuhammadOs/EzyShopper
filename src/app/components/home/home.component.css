@@ -1,0 +1,31 @@
+.custom-card {
+    transition: transform 0.2s;
+  }
+  
+  .custom-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  .card-img-top {
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Keeps aspect ratio */
+  }
+  
+  .list-group-item {
+    font-size: 1.1rem; /* Larger font size for better readability */
+    cursor: pointer;
+  }
+  
+  .list-group-item:hover {
+    background-color: #f8f9fa; /* Light hover effect */
+  }
+  
+  .text-muted {
+    font-weight: 500; /* Slightly bold for visibility */
+  }
+  
+  .shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important; /* Custom shadow */
+  }
+  
