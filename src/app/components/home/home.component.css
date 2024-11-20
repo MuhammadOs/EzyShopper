@@ -1,31 +1,55 @@
-.custom-card {
-    transition: transform 0.2s;
+.banner-section {
+  background-image: url('https://img.freepik.com/premium-photo/shopping-online-online-payment-concept-3d-illustration-marketing_311128-190.jpg?w=1380');
+  background-size: cover;
+  background-position: center;
+  color: #e7663f;
+  height: 500px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.text-content {
+  max-width: 50%;
+  margin-right: 2rem;
+  color: #e7663f;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .text-content {
+    max-width: 100%;
+    margin-right: 0;
+    text-align: center;
   }
-  
-  .custom-card:hover {
-    transform: scale(1.05);
-    cursor: pointer;
+
+  .banner-section {
+    align-items: center;
+    height: 300px;
   }
-  
-  .card-img-top {
-    height: 200px; /* Fixed height for uniformity */
-    object-fit: cover; /* Keeps aspect ratio */
+}
+
+.feature-image {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.feature-text h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.feature-text p {
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .feature-text,
+  .feature-image {
+    text-align: center;
   }
-  
-  .list-group-item {
-    font-size: 1.1rem; /* Larger font size for better readability */
-    cursor: pointer;
-  }
-  
-  .list-group-item:hover {
-    background-color: #f8f9fa; /* Light hover effect */
-  }
-  
-  .text-muted {
-    font-weight: 500; /* Slightly bold for visibility */
-  }
-  
-  .shadow-sm {
-    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important; /* Custom shadow */
-  }
-  
+}
